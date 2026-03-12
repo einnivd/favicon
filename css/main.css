@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+/* 전체 레이아웃 */
+.wrap{
+    width: 960px;
+    background-color: lightblue;
+    margin: 0 auto;
+}
+/* 메뉴 */
+.navi{
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    background-color: cornflowerblue;
+}
+/* > : 부모의 바로 아래 자식만 적용 */
+.navi > ul{
+    display: flex;
+    gap: 10px;
+    width: 600px;
+    margin: 0 auto;
+    /* background-color: aliceblue; */
+}
+.navi > ul > li{
+    width: calc(100%/4 );
+    text-align: center;
+}
+.navi > ul > li > a{
+    /* a는 inline이므로 부모의 width값 적용이 안 됨 */
+    /* display : block 설정해야 부모의 width값 적용됨 */
+    display: block;
+    padding: 20px 0;
+    background-color: #ccc;
+}
+.navi > ul > li > a:hover{
+    background-color: lightsalmon;
+    color: #fff;
+}
+/* 이용 안내 설명 */
+.container{
+    width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: lightpink; */
+}
+.container li{
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    /* border-radius는 4배수px로 하는 것이 좋다. */
+    border-radius: 8px;
+    background-color: #fff ;
+}
+.container h2{
+    padding: 10px 0;
+}
+/* 메뉴에 해당하는 id를 타겟 */
+#intro:target{
+    color: #fff;
+    background-color: rgb(32, 178, 129);
+}
+#room:target{
+    color: #fff;
+    background-color: rgb(134, 151, 55);
+}
+#reservation:target{
+    color: #fff;
+    background-color: rgb(32, 132, 178);
+}

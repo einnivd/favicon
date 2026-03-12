@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+/* 전체 레이아웃 */
+.wrap{
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgb(233, 233, 182);
+}
+.navi{
+    padding: 10px;
+    background-color: lightyellow;
+}
+.navi ul{
+    display: flex;
+    gap: 10px;
+    margin: 20px auto;
+    width: 600px;
+    /* background-color: rgb(157, 224, 183); */
+}
+.navi ul li{
+    width: calc(100%/4);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(200, 243, 229);
+}
+.container{
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgb(111, 199, 111);
+}
+.container h2{
+    padding: 10px 0;
+}
+.container li{
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
